@@ -1,12 +1,9 @@
 body {
-  background-color: #a292ba;
+  background-color: #f4f4f4;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
-img {
-  margin: 3px 30px 3px 3px;
-  width: 11%;
-}
+
 h1 {
   font-size: 50px;
   color: turquoise;
@@ -24,6 +21,34 @@ h3 {
   border: 8px dotted rgb(71, 206, 192);
   border-radius: 30px;
   background-color: rgb(198, 235, 231);
+}
+
+.img__wrap {
+  position: relative;
+  height: 82px;
+  width: 79px;
+}
+
+.img__description {
+  position: relative;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_img {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
