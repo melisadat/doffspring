@@ -1,0 +1,84 @@
+body {
+  background-color: #f4f4f4;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+img {
+  margin: 3px 30px 3px 3px;
+  width: 11%;
+}
+h1 {
+  font-size: 50px;
+  color: turquoise;
+}
+
+p {
+  color: rgb(38, 143, 132);
+  font-style: italic;
+}
+
+h3 {
+  font-size: xx-large;
+  color: turquoise;
+  padding: 50px 2px;
+  border: 8px dotted rgb(71, 206, 192);
+  border-radius: 30px;
+  background-color: rgb(198, 235, 231);
+}
+
+.button {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background: turquoise;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-style: italic;
+}
+.circle:hover {
+  background: rgb(38, 143, 132);
+  transform: rotate(360deg);
+}
+
+section.page2 {
+  display: none;
+}
+
+.animate-click {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.animated-click {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-600px);
+  }
+}
+
+@keyframes moved {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(-100px);
+  }
+}
