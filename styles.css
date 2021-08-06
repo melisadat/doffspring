@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f4f4;
+  background-color: #efc2fd;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
@@ -18,6 +18,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  padding: 20px 275px;
+}
+.emojis2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
 h3 {
@@ -56,13 +62,6 @@ h3 {
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
-}
-
-.img_img {
-  float: left;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button {
@@ -115,9 +114,9 @@ section.page2 {
 
 @keyframes moved {
   from {
-    transform: translateX(600px);
+    transform: translateY(-600px);
   }
   to {
-    transform: translateX(-100px);
+    transform: translateY(500px);
   }
 }
